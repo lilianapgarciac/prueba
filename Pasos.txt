@@ -1,0 +1,23 @@
+1. Crear entorno virtual
+python -m venv .myenviroment OR py -m venv .myenviroment
+
+2. Activar entorno virtual
+.\myenviroment\Scripts\Activate.ps1 OR Activate.ps1 from VScode
+
+3. pip freeze > requirements.txt 
+
+4. Create READ.md desde VScode
+
+5. echo [server] > .streamlit/config.toml
+   echo headless = true > .streamlit/config.toml
+   echo port = 10000 > .streamlit/config.toml
+   echo [browser] > .streamlit/config.toml
+   echo serverAddress = "0.0.0.0" > .streamlit/config.toml
+   echo serverPort = 10000 > .streamlit/config.toml
+
+6. Abre .streamlit/config.toml en VS Code.
+Abajo a la derecha, haz clic donde dice UTF-16 (o similar).
+Reopen with Encoding → UTF-8.
+Luego Save with Encoding → UTF-8 y guarda.
+
+7. streamlit run app.py
